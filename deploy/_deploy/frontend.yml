@@ -15,9 +15,9 @@
         branch: "{{ frontend_branch }}"
         git_track_submodules: false
         identity_file_path: "{{ frontend_identity_file_path }}"
-    - import_tasks: telescoop-deploy/tasks/setup-node-dependencies.yml
-      vars:
-        current_path: "{{ frontend_dir }}"
+    # - import_tasks: telescoop-deploy/tasks/setup-node-dependencies.yml
+    #   vars:
+    #     current_path: "{{ frontend_dir }}"
     - name: add environment variable file
       template:
         src: frontend.env
