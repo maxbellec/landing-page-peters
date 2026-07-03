@@ -1,0 +1,2 @@
+[prod]
+vps0.maxbellec.ovh:22 ansible_user=maxbellec
